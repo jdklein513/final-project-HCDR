@@ -1,0 +1,29 @@
+Slide 1: Ashley
+Hi class, we are group 9 and chose the home credit default risk project. Our group members are Rakesh, Joel, Suriya, and myself, Ashley.
+
+Slide 2: Ashley
+We will give you an overview of our project, review the EDA and modeling we performed, display our results, discuss the issues that arose, and define our next steps.
+
+Slide 3: Ashley
+Many consumers struggle receiving loan support from banks due to lacking credit history. Home Credit is a service whose goal is to provide loan opportunities for this underserved population. Our objective is to build a machine learning classification algorithm from the Kaggle dataset.
+
+Slide 4: Rakesh
+For this phase, we performed EDA on the main application file as well as each of the sub files. We looked at summary statistics, missing data information, and graphed some of the more interesting features. We learned that the top features from the application file are external sources, which tells us that the sub files will likely provide much lift in phases 2 and 3. Additionally, many features had no importance, which means that we can drop them from subsequent runs to help with speeding up the time it takes to fit the model.
+
+Slide 5: Joel
+The method we took to model the data for this phase was utilize only the application data and randomly split the data into 80% for train and 20% for test. We used 5-fold cross validation for tuning and estimating accuracy. 
+
+Slide 6: Joel
+We used all numeric and categorical features. For numeric features, we replaced missing values with the median and then standardized each feature. For categorical features, we replaced missing values with “unknown” and then one hot encoded each feature. From there, we executed logistic regression, random forest, and XGBoost model algorithms. 
+
+Slide 7: Joel
+Thus far, our best performing model was an XGBoost which scored 75.84 for test area under the ROC.
+
+Slide 8: Joel
+After submitting our best run for this phase to Kaggle, we are currently in 4,911th place.
+
+Slide 9: Suriya
+The issues we ran into during this phase include the large data size, code management, and time constraints. We were able to overcome each of these issues by utilizing Github and Slack, specifying days of the week for each teammate to complete specific tasks, and having the teammates with the most powerful computers fit the models.
+
+Slide 10: Suriya
+Over the next two phases, we plan to join in the sub files and perform feature engineering to derive new features. We also plan to implement a neural network. 
