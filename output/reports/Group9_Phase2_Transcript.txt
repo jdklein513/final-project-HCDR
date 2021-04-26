@@ -1,0 +1,44 @@
+Slide 1 cover page: Ashley
+Hi everyone, we are group 9 and this is our phase 2 presentation for the home credit default risk project. Our group members are Rakesh, Joel, Suriya, and Ashley.
+
+Slide 2 contents: Ashley
+We will give you an overview of our project, review the data prep, EDA, and modeling we performed, display our results, discuss the issues that arose, and define our next steps.
+
+Slide 3 overview: Ashley
+For phase 2 of our project, we focused on improving our phase 1 results by testing additional algorithms, incorporating the additional datasets, and feature engineering.
+
+Slide 4 data prep 1: Ashley
+We joined all the data sources together and removed features that either had a high amount of missing data or were highly correlated with other features.
+
+Slide 5 data prep 2: Rakesh
+Here we can see the details behind the data consolidation.
+
+Slide 6 feature list: Rakesh
+We utilized a total of 206 features.
+
+Slide 7 new EDA: Rakesh
+This slide displays the features with the most missing values and our target frequency distribution.
+
+Slide 8 data handling: Rakesh
+Throughout our pipeline, we engineered many new features, imputed missing numeric values with the median, standardized numeric features, imputed missing categorical values with “unknown,” and one-hot encoded categorical features. Additionally, we removed features with near zero variance and with no importance.
+
+Slide 9 sampling method: Joel
+We randomly split the data into 80% for train and 20% for test. We used 5 fold cross validation for tuning and estimating accuracy. 
+
+Slide 10 modeling pipeline 1: Joel
+We ran many experiments, utilizing logistic regression, XGBoost, Light GBM, and random forest. We tried these algorithms with all features, using PCA to explain 95% of the variance, using feature selection, and tried oversampling with SMOTE because of the target imbalance. We ran grid search against a variety of parameters listed on this slide. 
+
+Slide 11 modeling pipeline 2: Joel
+This slide visually shows our entire pipeline.
+
+Slide 12 results: Suriya
+The best performing model was an XGBoost with feature selection, which scored 78.27 for train area under the ROC.
+
+Slide 13 kaggle: Suriya
+After submitting our best run for this phase to Kaggle, we are currently in 3,834th place.
+
+Slide 14 issues: Suriya
+In addition to the phase 1 issues, the new issue that arose this phase was resource constraints. We were able to work through this issue by using Google Colab.
+
+Slide 15 conclusion: Suriya
+For phase 3, we plan to implement a neural network with Pytorch and experiment with a perceptron and support vector machine with Sklearn’s built in functions.
