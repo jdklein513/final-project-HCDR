@@ -1,0 +1,47 @@
+Slide 1: Ashley
+Hi class, we are group 9 and this is our phase 3 presentation for the home credit default risk project. Our group members are Rakesh, Joel, Suriya, and Ashley.
+
+Slide 2 contents: Ashley
+We will give you an overview of our project, review the data prep, EDA, and modeling we performed, display our results, and discuss the issues that arose.
+
+Slide 3 overview: Ashley
+For phase 3 of our project, we focused on improving our phase 2 results by incorporating a neural network.
+
+Slide 4 data prep 1: Rakesh
+Previously, we joined all the data sources together and removed features that either had a high amount of missing data or were highly correlated with other features.
+
+Slide 5 data prep 2: Rakesh
+Here we can see the details behind the data consolidation.
+
+Slide 6 feature list: Rakesh 
+We utilized a total of 240 features.
+
+Slide 7 EDA: Rakesh
+This slide displays some of our EDA.
+
+Slide 8 data handling pipeline: Rakesh
+Throughout our pipeline, we engineered many new features and cleaned the data.
+
+Slide 9 sampling method: Joel
+We randomly split the data into 80% for train and 20% for test. We then split the training data into 80% train and 20% validation.
+
+Slide 10 modeling pipeline: Joel
+This slide visually shows our pipeline.
+
+Slide 11 ANN: Joel
+For this phase, we focused on building a neural network in Pytorch. This slide visually represents our network.
+
+Slide 12 ensemble: Joel
+Our best performing model was an ensemble of models, stacking a neural network, XGBoost, and light GBM. 
+
+Slide 13 results: Joel
+This ensemble scored 78.44 for train area under the ROC.
+
+Slide 14 kaggle: Suriya
+After submitting our best run for this phase to Kaggle, we are in 3,651st place.
+
+Slide 15 issues: Suriya
+The main issues that arose in phase 3 include the size of the data and that Sklearn is not optimized for neural networks. Also, SVM never completed due to the data size.
+
+Slide 16 conclusion: Suriya
+In conclusion, we performed EDA, tested a variety of modeling methods, and achieved a respectable score against other Kaggle users.
