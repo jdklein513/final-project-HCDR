@@ -38,7 +38,7 @@ Certain consumers throughout the United States struggle to receive loan support 
 
 ## How to run code
 
-This repo is currently under development and this section will be updated at a later date.
+Execute jupyter notebook files in code folder in order.
 
 ## Contributors
 
